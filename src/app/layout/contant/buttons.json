@@ -1,0 +1,73 @@
+{
+  "wrongNetworkPopup": {
+    "showButtons": true,
+    "buttons": [
+      {"type": "primary",
+        "name": "Select Network",
+        "img": false,
+        "disable": false,
+        "classes": "btn-rounded w-100 walletButton",
+        "component": "wrongNetworkPopup"
+      }
+    ]
+  },
+  "connectAndDisconnect": {
+    "showButtons": false
+  },
+  "topNavRight": {
+    "showButtons": true,
+    "buttons": [
+      {"type": "primary-outline",
+        "name": "BSC",
+        "img": true,
+        "imgName": "topNavRight.greenDot",
+        "disable": false,
+        "classes": "btn-rounded w-100 walletButton",
+        "component": "topNavRight"
+      },
+      {"type": "primary-outline",
+        "name": "0.00",
+        "img": true,
+        "imgName": "topNavRight.wallet",
+        "disable": false,
+        "classes": "btn-outline-primary btn-rounded w-100 walletButton",
+        "component": "topNavRight"
+      },
+      {"type": "primary",
+        "name": "....",
+        "img": true,
+        "imgName": "topNavRight.address",
+        "disable": false,
+        "classes": "btn-rounded w-100 walletButton",
+        "component": "topNavRight"
+      }
+    ]
+  },
+  "connect": {
+    "showButtons": true,
+    "buttons": [
+      {"type": "primary",
+        "name": "Connect",
+        "img": true,
+        "imgName": "topNavRight.address",
+        "disable": false,
+        "classes": "btn-rounded w-100 walletButton",
+        "component": "topNavRight"
+      }
+    ]
+  },
+  "disconnect": {
+    "showButtons": true,
+    "buttons": [
+      {"type": "primary",
+        "name": "Disconnect",
+        "img": true,
+        "imgName": "topNavRight.address",
+        "disable": false,
+        "classes": "btn-rounded w-100 walletButton",
+        "component": "topNavRight"
+      }
+    ]
+  }
+}
+  

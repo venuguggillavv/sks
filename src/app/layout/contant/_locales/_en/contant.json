@@ -1,0 +1,70 @@
+{
+  "topNavLogo": {
+    "header": "",
+    "body": {
+      "name": "eMoney ...",
+      "bete": "",
+      "link": "/"
+    }
+  },
+  "leftSideMenus": {
+    "header": "Menus",
+    "Menus":  [
+      { "id": "1",
+        "label": "Dashboard",
+        "img": false,
+        "imgName": "",
+        "target":"",
+        "externalLink": false,
+        "disabled": true,
+        "link": "/dashboard"
+      },
+      { "id": "2",
+        "label": "Blocks",
+        "img": false,
+        "imgName": "",
+        "target":"",
+        "externalLink": false,
+        "disabled": false,
+        "link": "/blocks"
+      },
+      { "id": "3",
+        "label": "Transactions",
+        "img": false,
+        "imgName": "",
+        "target":"",
+        "externalLink": false,
+        "disabled": false,
+        "link": "/transactions"
+      },
+      { "id": "4",
+        "label": "Validators",
+        "img": false,
+        "imgName": "",
+        "target":"",
+        "externalLink": false,
+        "disabled": false,
+        "link": "/validators"
+      },
+      { "id": "5",
+        "label": "Faucet",
+        "img": false,
+        "imgName": "",
+        "target":"",
+        "externalLink": false,
+        "disabled": false,
+        "link": "/faucet"
+      },
+      { "id": "6",
+        "label": "Docs",
+        "img": false,
+        "imgName": "",
+        "target":"_blank",
+        "externalLink": true,
+        "disabled": false,
+        "link": "https://docs.emoney.network"
+      }
+    ]
+  }
+}
+  

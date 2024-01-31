@@ -1,0 +1,49 @@
+<div class="d-flex align-items-center menus">
+  <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+      @for (menu of menuItems; track menu.id) {
+        <li class="nav-item"> 
+          <a class="c-bootstrap nav-link" (click)="menus(menu)" [routerLink]="[menu.link]" 
+          routerLinkActive="active">
+          @if(menu.img){
+            <img [src]="menu.imgLink">
+          }
+            <span class="link">{{ menu.label }}</span>
+          </a>
+        </li>
+      } @empty {
+        <span>Empty list of menu</span>
+      }
+  </ul>
+  <div class="d-xs-none d-sm-none d-md-none d-lg-flex">
+    <mat-form-field>
+         <mat-select [(value)]="selectedValue" name="network">
+           @for (network of networks; track networks) {
+             <mat-option [value]="network.value">{{network.viewValue}}</mat-option>
+           }
+         </mat-select>
+       </mat-form-field>
+  </div>
+</div>
+
+<!-- <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+      @for (menu of menuItems; track menu.id) {
+        <li class="nav-item"> 
+          <a class="c-bootstrap nav-link" [routerLink]="[menu.link]" 
+          routerLinkActive="active">
+          @if(menu.img){
+            <img [src]="menu.imgLink">
+          }
+            <span class="link">{{ menu.label }}</span>
+          </a>
+        </li>
+      } @empty {
+        <span>Empty list of menu</span>
+      }
+  </ul>
+   <mat-form-field>
+    <mat-select [(value)]="selectedValue" name="network">
+      @for (network of networks; track networks) {
+        <mat-option [value]="network.value">{{network.viewValue}}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field> -->
