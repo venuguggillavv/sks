@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 // import { Application } from './runtime.js';
-// import { Application } from '@splinetool/runtime';
+import { Application } from '@splinetool/runtime';
 
 @Component({
   selector: 'sks-hero',
@@ -27,12 +27,12 @@ export class HeroComponent implements AfterViewInit{
     //   // Or change only one variable
     //   spline.setVariable('myName', 'Ringo');
     // }
-    // if (typeof document !== 'undefined') {
-    //   const canvas:any = document.getElementById('canvas3d');
-    //   console.log(canvas)
-    //   const app = new Application(canvas);
-    //   app.load('https://prod.spline.design/YZj2Klf4lZ-KjHwH/scene.splinecode');
-    // }
+    if (typeof document !== 'undefined') {
+      const canvas:any = document.getElementById('canvas3d');
+      console.log(canvas)
+      const app = new Application(canvas);
+      app.load('https://prod.spline.design/YZj2Klf4lZ-KjHwH/scene.splinecode');
+    }
   }
 }
 
