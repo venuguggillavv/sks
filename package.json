@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "docs": "ng build --output-path docs --base-href /sks/",
+    "public": "ng build --output-path docs --base-href /sks_public/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:sks": "node dist/sks/server/server.mjs"

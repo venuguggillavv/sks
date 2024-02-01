@@ -31,7 +31,7 @@ export class HeroComponent implements AfterViewInit{
       const canvas:any = document.getElementById('canvas3d');
       console.log(canvas)
       const app = new Application(canvas);
-      app.load('https://prod.spline.design/vXiXuAkpyHdq2xVt/scene.splinecode');
+      app.load('https://prod.spline.design/YZj2Klf4lZ-KjHwH/scene.splinecode');
     }
   }
 }
