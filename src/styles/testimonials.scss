@@ -1,0 +1,88 @@
+@import "./variables.scss";
+
+// //------------ testimonials section
+.testimonials{
+    .section-header {
+        p {
+            width: 60%;
+            text-align: center;
+            color: $contentFontColor;
+        }
+    }
+    .card {
+        background-color: transparent;
+        .avatar{
+            position: relative;
+            width: 100%;
+            height: 230px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 100%;
+                max-width: 220px;
+                z-index: 1;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+        .bg{
+            display:inline-block;
+            position: absolute;
+            width:80%;
+            height: 80%;
+            color: #18181D;
+            // margin:20px;
+            z-index: 0;
+            bottom: 0;
+            filter:url(#round);
+            transition: 3m ease-in-out;
+        }
+        .bg::before {
+            content:"";
+            display:block;
+            height: 100%;
+            background:currentColor;
+            clip-path: polygon(0 0%, 100% 60%, 100% 100%, 100% 100%, 0% 100%, 0% 50%);
+           
+         }
+        .card-body{
+            .tittle{
+                font-size: $contentFontSize2;
+                color: $gold;
+                font-weight: $contentFontWeight;
+            }
+            p{
+                font-size: $contentFontSize;
+                color: $contentFontColor2;
+                font-weight: $contentFontWeight;
+            }
+        }
+        
+    }
+    .card:hover{
+        cursor: pointer;
+        .bg::before {
+            clip-path: polygon(0 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 50%);
+           
+         }
+         .card-body{
+
+            p{
+                color: $contentFontColor;
+            }
+        }
+    }
+    .full-page {
+        .tittle{
+            color: $gold;
+            font-size: $testimonalsFontSize;
+            font-weight: $contentFontWeight2;
+        }
+        p{
+            color: $testimonalsFontColor;
+            margin-bottom: 50px;
+        }
+    }
+}
+

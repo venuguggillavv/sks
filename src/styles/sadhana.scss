@@ -1,0 +1,69 @@
+@import "./variables.scss";
+
+// //------------ sadhana section
+
+.sadhana{
+    .sadhana-left{
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(2,0,36);
+        background: linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(27,51,81,1) 36%, rgb(80, 49, 77) 87%);
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        overflow: hidden;
+        .btn{
+            color: rgba(255,255,255,0.75);
+            background: rgb(17,16,24);
+            background: linear-gradient(107deg, rgba(17,16,24,0) 7%, rgba(17,16,24,0.6939890710382514) 37%, rgba(17,16,24,1) 87%);margin: 8px 0;
+            width: 100%;
+            height: 60px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            border: none;
+            padding: 0 30px;
+            transition: all 300ms;
+            // border-width: 3px;
+            // border-style: solid;
+            // clip-path: inset(-5% -30% -15% 2%);
+            // border-image: linear-gradient(
+            //     to left,
+            //     rgb(0 0 0 / 0%) 2%,
+            //     rgb(0, 255, 255) 48%,
+            //     rgb(0 0 20 / 11%) 100%) 100% 0 100% 0/1px 0 0px 20px stretch;
+        }
+        .btn.active{
+            border-width: 3px;
+            border-style: solid;
+            clip-path: inset(-5% -30% -15% 2%);
+            border-image: linear-gradient(
+                to left,
+                rgb(0 0 0 / 0%) 2%,
+                rgb(0, 255, 255) 48%,
+                rgb(0 0 20 / 11%) 100%) 100% 0 100% 0/1px 0 0px 20px stretch;
+            transition: all 300ms;
+            }
+    }
+    .sadhana-right{
+        // h2{
+
+        //     background: $headerFontColor1;
+        // }
+        span{
+            font-size: $contentFontSize;
+            color: $contentFontColor;
+            font-weight: $contentFontWeight;
+        }
+    }
+}
+// //------------ end sadhana section

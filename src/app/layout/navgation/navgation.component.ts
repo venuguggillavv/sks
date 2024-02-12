@@ -12,7 +12,6 @@ import { TopSocialMenuComponent } from './top-social-menu/top-social-menu.compon
   standalone: true,
   imports: [ RouterModule, TopNavComponent, TopSocialMenuComponent],
   templateUrl: './navgation.component.html',
-  styleUrl: './navgation.component.scss'
 })
 
 export class NavgationComponent {

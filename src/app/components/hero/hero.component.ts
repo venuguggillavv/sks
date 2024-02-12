@@ -29,10 +29,10 @@ export class HeroComponent implements AfterViewInit{
     //   spline.setVariable('myName', 'Ringo');
     // }
     if (typeof document !== 'undefined') {
-      // const canvas:any = document.getElementById('canvas3d');
-      // console.log(canvas)
-      // const app = new Application(canvas);
-      // app.load('https://prod.spline.design/YZj2Klf4lZ-KjHwH/scene.splinecode');
+      const canvas:any = document.getElementById('canvas3d');
+      console.log(canvas)
+      const app = new Application(canvas);
+      app.load('https://prod.spline.design/YZj2Klf4lZ-KjHwH/scene.splinecode');
     }
   }
 }

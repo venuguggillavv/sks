@@ -10,7 +10,6 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule],
   templateUrl: './top-social-menu.component.html',
-  styleUrl: './top-social-menu.component.scss'
 })
 export class TopSocialMenuComponent {
   contant: any;

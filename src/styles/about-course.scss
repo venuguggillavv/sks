@@ -1,0 +1,146 @@
+@import "./variables.scss";
+
+
+// //------------ about course section
+
+.about-course{
+    position: relative;
+    .bottom-section{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        box-sizing: content-box;
+        .bg{
+            position: absolute;
+            top: 0; 
+            z-index: 0;
+        }
+    }
+    .about-card{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+        z-index: 1;
+        .card{
+            border-radius: 20px;
+            max-width: 100%;
+            width: 400px;
+            height: 330px;
+            border-radius: 20px;
+            background-color: transparent;
+            .header{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: $cardHeaderHeight;
+                border-radius:20px 20px 0 0 ;
+                background: rgb(49,58,91);
+                background: linear-gradient(180deg, rgba(49,58,91,0.0) 0%, rgba(49,58,91,0.4) 100%);
+                // background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+                backdrop-filter: blur(5px); /* Apply blur effect */
+                -webkit-backdrop-filter: blur(5px); /* For Safari */
+                border-width: 1px;
+                border-style: solid;
+                border-color: #ffffff56;
+                border-top: 0px;
+                border-bottom: 0px;
+                box-sizing: border-box;
+                .img-right-top{
+                    display: flex;
+                    justify-content: end;
+                    margin-top: -50px;
+                }
+                .tittle{
+                    display: flex;
+                    justify-content: start;
+                    margin: -30px 0 0 30px;
+                    font-size: 22px;
+                    color: #fff;
+                    font-weight: $headerFontWeight7;
+                }
+            }
+            .body{
+                display: flex;
+                width: 100%;
+                height: calc(100% - $cardHeaderHeight);
+                border-radius: 0 0 20px 20px;
+                background: rgb(49,58,91);
+                background: linear-gradient(180deg, rgba(49,58,91,0.4) 0%, rgba(49,58,91,0.9) 100%);
+                // background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+                backdrop-filter: blur(5px); /* Apply blur effect */
+                -webkit-backdrop-filter: blur(5px); /* For Safari */
+                border-width: 1px;
+                border-style: solid;
+                border-color: #ffffff56;
+                border-top: 0px;
+                box-sizing: border-box;
+                .line
+                    {
+                    position: absolute;
+                    background-color: $gold;
+                    box-shadow: 0px 0px 12px $gold;
+                    width: 100%;
+                    height: 2px;
+                    top: 0;
+                    left: 0;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    .scanner 
+                        {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: #f1ddc6;
+                        width: 20px;
+                        height: 100%;
+                        border-radius: 50%;
+                        animation: scanner-loop 3s ease-in-out infinite;
+                        }
+
+                    }
+            .inner{
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                padding: 20px;
+                .tittle{
+                    color: $gold;
+                    font-weight: $contentFontWeight2;
+                    font-size: 18px;
+                    text-shadow: 2px 2px 4px #000000;
+                }
+                .contant{
+                    color: #ffffffc4;
+                    font-weight: 400;
+                    font-size: 14px;
+                    margin-top: 12px;   
+                }
+            }
+            }
+        }
+        
+    }
+}
+@keyframes scanner-loop
+{
+  0% 
+  {
+    left: 0;
+  }
+  50%
+  {
+    left: 100%;
+  }
+  100%
+  {
+    left: 0;
+  }
+}
+
+// //------------ end about course section

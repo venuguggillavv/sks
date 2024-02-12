@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+// //------------ donations section
+.donations {
+    
+    
+    .image-bg {
+        background-color: $donations-bg-color;
+        width: 100%;
+        height: 100%;
+        // border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .donation-right{
+        span{
+            font-size: $contentFontSize2;
+            color: $defaultFontColor;
+            font-weight: $contentFontWeight;
+            line-height: 1.8;
+        }
+        .highlight{
+            color: $gold;
+            font-weight: $contentFontWeight2;
+        }
+    }
+}
+
+// //------------ end donations section
