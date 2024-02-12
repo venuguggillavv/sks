@@ -1,0 +1,67 @@
+<div class="container-fluid">
+
+<div class="row">
+    <div #carousel class="carousel">
+        <!-- list item -->
+        <div class="mesh-group">
+            @for (loop of Arr(verticalLoop).fill(1); track loop) {
+                <div class="vertical"></div>
+            }
+            <!-- <div class="horizontal"></div> -->
+        </div>
+        <div class="list">
+            @for (item of gallery; track item.id) {
+                
+                <div class="item">
+                    <img [src]="item.imgSrc">
+                    
+                    <div class="content">
+                        @if(item.defaultTittle) {
+                            <div class="topic">{{item.defaultTittle}}</div>
+                        }
+                        @else {
+                            <div class="author">LUNDEV</div>
+                            <div class="title">DESIGN SLIDER</div>
+                            <div class="topic">ANIMAL</div>
+                        }
+                        <div class="des">
+    
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <!-- <button>SUBSCRIBE</button> -->
+                        </div>
+                    </div>
+                </div>
+            }
+           
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            @for (item of gallery; track item.id) {
+                <div class="item">
+                    <img [src]="item.imgSrc">
+                    <div class="content">
+                        <div class="title">
+                            {{item.author}}
+                        </div>
+                        <div class="description">
+                            {{item.title}}
+                        </div>
+                    </div>
+                </div>
+              }
+        </div>
+        <!-- next prev -->
+    
+        <div class="arrows">
+            <button (click)="prev()"><</button>
+            <button (click)="next()">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+</div>
+<!-- carousel -->
+</div>

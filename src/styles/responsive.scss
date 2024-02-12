@@ -1,0 +1,48 @@
+@import "./variables.scss";
+@media (max-width: 1399px) {
+
+
+  }
+@media (max-width: 1199px) {
+ 
+  }
+@media (max-width: 991px) {
+  .sadhana{
+    .sadhana-left{
+      width: 100% !important;
+      height: 200px !important;
+    }
+    .sadhana-right{
+      h2{
+        font-size: $headerFontSize-tab !important;
+        text-align: center;
+        margin-top: 20px;
+      }
+      span{
+        text-align: center;
+      }
+    }
+  }
+  .donations{
+    .sadhana-left{
+      width: 100% !important;
+      height: 200px !important;
+    }
+    .donation-right{
+      h2{
+        font-size: $headerFontSize-tab !important;
+        text-align: center;
+        margin-top: 20px;
+      }
+      span{
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+
+  }
+@media (max-width: 420px) {
+
+  }

@@ -7,62 +7,103 @@
       "link": "/"
     }
   },
-  "leftSideMenus": {
+  "topMainMenus": {
     "header": "Menus",
     "Menus":  [
       { "id": "1",
-        "label": "Dashboard",
+        "label": "Home",
         "img": false,
         "imgName": "",
         "target":"",
         "externalLink": false,
         "disabled": true,
-        "link": "/dashboard"
+        "link": "/home"
       },
       { "id": "2",
-        "label": "Blocks",
+        "label": "Why Siva Kundalini Sadhana",
         "img": false,
         "imgName": "",
         "target":"",
         "externalLink": false,
         "disabled": false,
-        "link": "/blocks"
+        "link": "/whysivakundalinisadhana"
       },
       { "id": "3",
-        "label": "Transactions",
+        "label": "Register",
         "img": false,
         "imgName": "",
         "target":"",
         "externalLink": false,
         "disabled": false,
-        "link": "/transactions"
+        "link": "/register"
       },
       { "id": "4",
-        "label": "Validators",
+        "label": "Gallery",
         "img": false,
         "imgName": "",
         "target":"",
         "externalLink": false,
         "disabled": false,
-        "link": "/validators"
+        "link": "/gallery"
       },
       { "id": "5",
-        "label": "Faucet",
+        "label": "Donations",
         "img": false,
         "imgName": "",
         "target":"",
         "externalLink": false,
         "disabled": false,
-        "link": "/faucet"
+        "link": "/donations"
       },
       { "id": "6",
-        "label": "Docs",
+        "label": "Contact",
         "img": false,
         "imgName": "",
         "target":"_blank",
         "externalLink": true,
         "disabled": false,
-        "link": "https://docs.emoney.network"
+        "link": "/contact"
+      }
+    ]
+  },
+  "topSocialMenus": {
+    "header": "SocialMenus",
+    "Menus":  [
+      { "id": "1",
+        "label": "Youtube",
+        "img": true,
+        "imgName": "topNavSocial.youtube",
+        "target":"",
+        "externalLink": false,
+        "disabled": false,
+        "link": "#"
+      },
+      { "id": "2",
+        "label": "Twitter",
+        "img": true,
+        "imgName": "topNavSocial.twitter",
+        "target":"",
+        "externalLink": false,
+        "disabled": false,
+        "link": "#"
+      },
+      { "id": "3",
+        "label": "Facebook",
+        "img": true,
+        "imgName":"topNavSocial.facebook",
+        "target":"",
+        "externalLink": false,
+        "disabled": false,
+        "link": "#"
+      },
+      { "id": "4",
+        "label": "Instagram",
+        "img": true,
+        "imgName": "topNavSocial.instagram",
+        "target":"",
+        "externalLink": false,
+        "disabled": false,
+        "link": "#"
       }
     ]
   }

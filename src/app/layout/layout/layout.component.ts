@@ -6,13 +6,27 @@ import { en } from '../contant/content.component';
 import { NavgationComponent } from '../navgation/navgation.component';
 import { FooterComponent } from '../footer/footer.component';
 import { HeroComponent } from '../../components/hero/hero.component';
+import { SadhanaComponent } from '../../components/sadhana/sadhana.component';
+import { AboutCourseComponent } from '../../components/about-course/about-course.component';
+import { GalleryComponent } from '../../components/gallery/gallery.component';
+import { TestimonialsComponent } from '../../components/testimonials/testimonials.component';
+import { DonationsComponent } from '../../components/donations/donations.component';
 
 @Component({
     selector: 'sks-layout',
     standalone: true,
     templateUrl: './layout.component.html',
-    styleUrl: './layout.component.scss',
-    imports: [RouterOutlet, NavgationComponent, FooterComponent, HeroComponent ]
+    imports: [
+      RouterOutlet, 
+      NavgationComponent, 
+      HeroComponent, 
+      SadhanaComponent,
+      AboutCourseComponent,
+      GalleryComponent,
+      TestimonialsComponent,
+      DonationsComponent,
+      FooterComponent
+    ]
 })
 export class LayoutComponent {
 

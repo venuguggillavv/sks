@@ -1,0 +1,26 @@
+header .navbar{
+    margin-top: 40px;
+    height: 113px;
+    a{
+        height: 100%;
+        color: #fff;
+        img{
+            height: 100%;
+        }
+        :hover {
+            span {
+                color: red;
+            }
+        }
+    }
+    .nav-link, .link{
+        color: #fff !important;
+    }
+    .main .nav-link{
+        padding: 0 20px;
+    }
+    .main li:last-child .nav-link, .social_menus li:last-child .nav-link{
+        padding-right: 0;
+    }
+    
+}

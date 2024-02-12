@@ -1,0 +1,41 @@
+<div class="container sadhana mt-5">
+    <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="sadhana-left ">
+                    <div class="d-flex align-items-center flex-column">
+                        <div (click)="toggleOnClick = 'kundalini'" [class.active]="toggleOnClick === 'kundalini'" class="btn active">Siva Kundalini Sadhana</div>
+                        <div (click)="toggleOnClick = 'why-kundalini'" [class.active]="toggleOnClick === 'why-kundalini'" class="btn ">Why Siva Kundalini Sadhana</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="sadhana-right">
+                    <h2>
+                        @if(toggleOnClick === "kundalini"){
+                            Siva Kundalini Sadhana
+                        }
+                        @if(toggleOnClick === "why-kundalini"){
+                            Why Siva Kundalini Sadhana
+                        }
+                    </h2>
+                    <span>
+                        @if(toggleOnClick === "kundalini"){
+                            The Safest and the most organized form of practicing Kundalini Yoga is being offered in an unique way by Parama Pujya Sree Jeeveswara Yogi. The Sadhana methodology can take us towards self-realization by harnessing the most powerful Kundalini energy and experiencing its manifestations. It is one of the easiest, most practical, very pow erful, result oriented and experiential ways of learning Kundalini Yoga in the presence of a self-realized and experienced Guru.
+                        }
+                        @if(toggleOnClick === "why-kundalini"){
+                            There are many yogic practices in India which can help a person attain self-realization. However, there are quite a few of them which can be practiced by everyone in all walks of life and without any restrictions. Siva Kundalini Sadhana is a Unique course which lets the sadhak experience higher states like Samadhi in a very short time which otherwise takes several years of sadhana. Using this sadhana one can awaken their Kundalini Energy and activate the Chakras.
+                            <br />
+                            Entering into Sushumna nadi is one of the most difficult achievements for a sadhak. Many yogis spend many years in intense sadhana to get to this state. In Siva Kundalini Sadhana, with the grace of Parama Pujya Sree Jeeveswara Yogi, one can not just enter into Sushumna nadi instantly but can also be in that state throughout the day.
+                            <br />
+                            Sadhaks can solve all their problems as most of them are related to any one of the 7 Chakras. Siva Kundalini Sadhana is a path that can take you from connecting with the creator to transforming yourselves into the creator. This Divine Knowledge and experience is of immense value which cannot be paid. Hence it is offered Free of cost.
+                        }
+                    </span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+{
+  "common": {
+    "logo": "assets/logo/SKS_Logo.svg"
+  },
+  "topNavSocial": {
+    "youtube": "assets/social/youtube.svg",
+    "twitter": "assets/social/twitter.svg",
+    "facebook": "assets/social/facebook.svg",
+    "instagram": "assets/social/instagram.svg"
+  }
+
+} 
